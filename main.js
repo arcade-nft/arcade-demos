@@ -164,8 +164,8 @@
     render() {
       const { game } = this;
       game.debug.box2dWorld();
-      game.debug.text('Mouse X: ' + game.input.mousePointer.x, 20, 20);
-      game.debug.text('Mouse Y: ' + game.input.mousePointer.y, 20, 40);
+      game.debug.text('Mouse X: ' + (game.input.mousePointer.x - 400) * 10, 20, 20);
+      game.debug.text('Mouse Y: ' + (game.input.mousePointer.y -525) * 10, 20, 40);
     }
   }
 
